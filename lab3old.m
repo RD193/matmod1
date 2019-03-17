@@ -6,5 +6,5 @@ yline = interp1(x,y,xi,'line');
 ycubic = interp1(x,y,xi,'c');
 yspline = interp1(x,y,xi,'spline');
 plot(x, y, 'ko', xi, ynear, 'r', xi, yline, 'g', xi, ycubic, 'b', xi, yspline, 'y');
-title("Способы интерполяции");
+title("Г‘ГЇГ®Г±Г®ГЎГ» ГЁГ­ГІГҐГ°ГЇГ®Г«ГїГ¶ГЁГЁ");
 legend({'data', 'nearest', 'line', 'cubic', 'spline'}, 'Location', 'southeast')
