@@ -1,0 +1,13 @@
+f = str2sym('r*cos(pi/4)');
+f2 = str2sym('-r*cos(pi/4)');
+phi= 0:0.1:2*pi+0.08;
+R = 0:0.1:1;
+[R,Phi] = meshgrid(R,phi);
+Z = double(subs(f, 'r', R));
+Z2 = Z.*(-1);
+figure(1)
+[X,Y,Z] = pol2cart(Phi,R,Z);
+surf(X,Y,Z);
+hold on;
+surf(X,Y,Z2);
+hold off;
