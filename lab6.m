@@ -1,0 +1,10 @@
+initsol=bvpinit(1:0.05:2,[1 0]);
+sol=bvp4c('f6','g6',initsol);
+plot(sol.x,sol.y(1,:),'ro'); hold on;
+X = 1:0.05:2;
+sym t;
+y = dsolve('D2y = Dy/t + 3*t', 'y(1) = 2', 'y(2) = 9');
+fplot(y, [1 2]); grid;
+title("Порівняння точного й наближеного розв'язків крайової задачі");
+xlabel('\itx'); ylabel('\ity');
+legend("наближений розв'язок", "точний розв'язок");
