@@ -1,0 +1,19 @@
+figure(1);
+try
+    lab8f(12,4,10,5,pi/2);
+end
+clear;
+figure(2);
+try
+    lab8f(12,4,10,6,pi/2);
+end
+clear;
+figure(3);
+try
+    lab8f(12,4,10,7,pi/2);
+end
+clear;
+figure(4);
+try
+    lab8f(12,8,10,4,pi/2);
+end
